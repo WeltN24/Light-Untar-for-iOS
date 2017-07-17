@@ -7,43 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0792C16A96D20B9233A41527 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B459F9C6825E8CDD866C0EC /* libPods-Tests.a */; };
-		8670635B1AA79A86007ACA15 /* libLight-Untar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8670634F1AA79A86007ACA15 /* libLight-Untar.a */; };
-		8670636B1AA79AD5007ACA15 /* NSFileManager+Tar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670636A1AA79AD5007ACA15 /* NSFileManager+Tar.m */; };
 		8670636D1AA79EED007ACA15 /* NSFileManagerTarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670636C1AA79EED007ACA15 /* NSFileManagerTarTests.m */; };
 		867063721AA7A3E5007ACA15 /* average.tar in Resources */ = {isa = PBXBuildFile; fileRef = 8670636F1AA7A3E5007ACA15 /* average.tar */; };
 		867063731AA7A3E5007ACA15 /* corrupt.tar in Resources */ = {isa = PBXBuildFile; fileRef = 867063701AA7A3E5007ACA15 /* corrupt.tar */; };
 		867063741AA7A3E5007ACA15 /* simple.tar in Resources */ = {isa = PBXBuildFile; fileRef = 867063711AA7A3E5007ACA15 /* simple.tar */; };
 		867063761AA7ACC3007ACA15 /* big.tar in Resources */ = {isa = PBXBuildFile; fileRef = 867063751AA7ACC3007ACA15 /* big.tar */; };
+		C714E5881F1CCC9A00708DC7 /* LightUntar.h in Headers */ = {isa = PBXBuildFile; fileRef = C714E5861F1CCC9A00708DC7 /* LightUntar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C714E58C1F1CCCA000708DC7 /* NSFileManager+Tar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670636A1AA79AD5007ACA15 /* NSFileManager+Tar.m */; };
+		C714E58D1F1CCCD900708DC7 /* NSFileManager+Tar.h in Headers */ = {isa = PBXBuildFile; fileRef = 867063691AA79AD5007ACA15 /* NSFileManager+Tar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C714E5901F1CCEB200708DC7 /* LightUntar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C714E5841F1CCC9A00708DC7 /* LightUntar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8670635C1AA79A86007ACA15 /* PBXContainerItemProxy */ = {
+		C714E58E1F1CCD8000708DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 867063471AA79A86007ACA15 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8670634E1AA79A86007ACA15;
-			remoteInfo = "Light-Untar";
+			remoteGlobalIDString = C714E5831F1CCC9A00708DC7;
+			remoteInfo = LightUntar;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8670634D1AA79A86007ACA15 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0658EDD589658B4A26C84777 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4352E6013FF30AA487B5130D /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8670634F1AA79A86007ACA15 /* libLight-Untar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libLight-Untar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8670635A1AA79A86007ACA15 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8670635A1AA79A86007ACA15 /* LightUntarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightUntarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		867063601AA79A86007ACA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867063691AA79AD5007ACA15 /* NSFileManager+Tar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Tar.h"; sourceTree = "<group>"; };
 		8670636A1AA79AD5007ACA15 /* NSFileManager+Tar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Tar.m"; sourceTree = "<group>"; };
@@ -53,22 +39,24 @@
 		867063711AA7A3E5007ACA15 /* simple.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = simple.tar; sourceTree = "<group>"; };
 		867063751AA7ACC3007ACA15 /* big.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = big.tar; sourceTree = "<group>"; };
 		8B459F9C6825E8CDD866C0EC /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C714E5841F1CCC9A00708DC7 /* LightUntar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightUntar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C714E5861F1CCC9A00708DC7 /* LightUntar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightUntar.h; sourceTree = "<group>"; };
+		C714E5871F1CCC9A00708DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8670634C1AA79A86007ACA15 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		867063571AA79A86007ACA15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8670635B1AA79A86007ACA15 /* libLight-Untar.a in Frameworks */,
-				0792C16A96D20B9233A41527 /* libPods-Tests.a in Frameworks */,
+				C714E5901F1CCEB200708DC7 /* LightUntar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C714E5801F1CCC9A00708DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +68,8 @@
 			children = (
 				867063511AA79A86007ACA15 /* Light-Untar */,
 				8670635E1AA79A86007ACA15 /* Tests */,
+				C714E5851F1CCC9A00708DC7 /* LightUntar */,
 				867063501AA79A86007ACA15 /* Products */,
-				FE803DFDF7A6EF992DA84E7C /* Pods */,
 				BEA1341A78B0E005A763588B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +77,8 @@
 		867063501AA79A86007ACA15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8670634F1AA79A86007ACA15 /* libLight-Untar.a */,
-				8670635A1AA79A86007ACA15 /* Tests.xctest */,
+				8670635A1AA79A86007ACA15 /* LightUntarTests.xctest */,
+				C714E5841F1CCC9A00708DC7 /* LightUntar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,55 +129,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FE803DFDF7A6EF992DA84E7C /* Pods */ = {
+		C714E5851F1CCC9A00708DC7 /* LightUntar */ = {
 			isa = PBXGroup;
 			children = (
-				0658EDD589658B4A26C84777 /* Pods-Tests.debug.xcconfig */,
-				4352E6013FF30AA487B5130D /* Pods-Tests.release.xcconfig */,
+				C714E5861F1CCC9A00708DC7 /* LightUntar.h */,
+				C714E5871F1CCC9A00708DC7 /* Info.plist */,
 			);
-			name = Pods;
+			path = LightUntar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		8670634E1AA79A86007ACA15 /* Light-Untar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 867063631AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "Light-Untar" */;
-			buildPhases = (
-				8670634B1AA79A86007ACA15 /* Sources */,
-				8670634C1AA79A86007ACA15 /* Frameworks */,
-				8670634D1AA79A86007ACA15 /* CopyFiles */,
+/* Begin PBXHeadersBuildPhase section */
+		C714E5811F1CCC9A00708DC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C714E5881F1CCC9A00708DC7 /* LightUntar.h in Headers */,
+				C714E58D1F1CCCD900708DC7 /* NSFileManager+Tar.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Light-Untar";
-			productName = "Light-Untar";
-			productReference = 8670634F1AA79A86007ACA15 /* libLight-Untar.a */;
-			productType = "com.apple.product-type.library.static";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		867063591AA79A86007ACA15 /* Tests */ = {
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		867063591AA79A86007ACA15 /* LightUntarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 867063661AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 867063661AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "LightUntarTests" */;
 			buildPhases = (
-				FDA5517E95A619AE8BA7CE44 /* Check Pods Manifest.lock */,
 				867063561AA79A86007ACA15 /* Sources */,
 				867063571AA79A86007ACA15 /* Frameworks */,
 				867063791AA7BB4C007ACA15 /* ShellScript */,
 				867063581AA79A86007ACA15 /* Resources */,
-				F85D5DEFF8AB1E22E88AB745 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8670635D1AA79A86007ACA15 /* PBXTargetDependency */,
+				C714E58F1F1CCD8000708DC7 /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = LightUntarTests;
 			productName = "Light-UntarTests";
-			productReference = 8670635A1AA79A86007ACA15 /* Tests.xctest */;
+			productReference = 8670635A1AA79A86007ACA15 /* LightUntarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C714E5831F1CCC9A00708DC7 /* LightUntar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C714E58B1F1CCC9A00708DC7 /* Build configuration list for PBXNativeTarget "LightUntar" */;
+			buildPhases = (
+				C714E57F1F1CCC9A00708DC7 /* Sources */,
+				C714E5801F1CCC9A00708DC7 /* Frameworks */,
+				C714E5811F1CCC9A00708DC7 /* Headers */,
+				C714E5821F1CCC9A00708DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightUntar;
+			productName = LightUntar;
+			productReference = C714E5841F1CCC9A00708DC7 /* LightUntar.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,14 +196,15 @@
 		867063471AA79A86007ACA15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = OCTO;
 				TargetAttributes = {
-					8670634E1AA79A86007ACA15 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
 					867063591AA79A86007ACA15 = {
 						CreatedOnToolsVersion = 6.1.1;
+					};
+					C714E5831F1CCC9A00708DC7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -220,8 +220,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8670634E1AA79A86007ACA15 /* Light-Untar */,
-				867063591AA79A86007ACA15 /* Tests */,
+				867063591AA79A86007ACA15 /* LightUntarTests */,
+				C714E5831F1CCC9A00708DC7 /* LightUntar */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +235,13 @@
 				867063731AA7A3E5007ACA15 /* corrupt.tar in Resources */,
 				867063761AA7ACC3007ACA15 /* big.tar in Resources */,
 				867063741AA7A3E5007ACA15 /* simple.tar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C714E5821F1CCC9A00708DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,47 +261,9 @@
 			shellPath = /bin/sh;
 			shellScript = "cd ${SRCROOT}/Tests/\n./generate-assets.sh";
 		};
-		F85D5DEFF8AB1E22E88AB745 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDA5517E95A619AE8BA7CE44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8670634B1AA79A86007ACA15 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8670636B1AA79AD5007ACA15 /* NSFileManager+Tar.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		867063561AA79A86007ACA15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,13 +272,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C714E57F1F1CCC9A00708DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C714E58C1F1CCCA000708DC7 /* NSFileManager+Tar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8670635D1AA79A86007ACA15 /* PBXTargetDependency */ = {
+		C714E58F1F1CCD8000708DC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8670634E1AA79A86007ACA15 /* Light-Untar */;
-			targetProxy = 8670635C1AA79A86007ACA15 /* PBXContainerItemProxy */;
+			target = C714E5831F1CCC9A00708DC7 /* LightUntar */;
+			targetProxy = C714E58E1F1CCD8000708DC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -381,43 +358,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		867063641AA79A86007ACA15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		867063651AA79A86007ACA15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		867063671AA79A86007ACA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0658EDD589658B4A26C84777 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,15 +378,73 @@
 		};
 		867063681AA79A86007ACA15 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4352E6013FF30AA487B5130D /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C714E5891F1CCC9A00708DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LightUntar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.welt.LightUntar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C714E58A1F1CCC9A00708DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = LightUntar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.welt.LightUntar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -450,20 +460,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		867063631AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "Light-Untar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				867063641AA79A86007ACA15 /* Debug */,
-				867063651AA79A86007ACA15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		867063661AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		867063661AA79A86007ACA15 /* Build configuration list for PBXNativeTarget "LightUntarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				867063671AA79A86007ACA15 /* Debug */,
 				867063681AA79A86007ACA15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C714E58B1F1CCC9A00708DC7 /* Build configuration list for PBXNativeTarget "LightUntar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C714E5891F1CCC9A00708DC7 /* Debug */,
+				C714E58A1F1CCC9A00708DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

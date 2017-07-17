@@ -30,13 +30,8 @@
 
 #import "NSFileManager+Tar.h"
 
-#define HC_SHORTHAND
-#import <OCHamcrest/OCHamcrest.h>
-
 @interface NSFileManagerTarTests : XCTestCase
-
-@property (nonatomic, strong) NSString *extractDir;
-
+@property (nonatomic, copy) NSString *extractDir;
 @end
 
 @implementation NSFileManagerTarTests
@@ -72,7 +67,7 @@
     
     //THEN
     XCTAssertTrue(isExtracted, @"Error");
-    assertThat(error, nilValue());
+    XCTAssertNil(error);
 }
 
 - (void)testAverageSizeFile {
@@ -89,10 +84,10 @@
     
     //THEN
     XCTAssertTrue(isExtracted, @"Error");
-    assertThat(error, nilValue());
+    XCTAssertNil(error);
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:self.extractDir error:nil];
-    assertThat(files, notNilValue());
-    assertThat(files, isNot(isEmpty()));
+    XCTAssertNotNil(files);
+    XCTAssert(files.count > 0);
 }
 
 - (void)testBigSizeFile {
@@ -109,10 +104,10 @@
     
     //THEN
     XCTAssertTrue(isExtracted, @"Error");
-    assertThat(error, nilValue());
+    XCTAssertNil(error);
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:self.extractDir error:nil];
-    assertThat(files, notNilValue());
-    assertThat(files, isNot(isEmpty()));
+    XCTAssertNotNil(files);
+    XCTAssert(files.count > 0);
 }
 
 - (void)testNotExistingFile {
@@ -129,9 +124,9 @@
     
     //THEN
     XCTAssertFalse(isExtracted, @"Error");
-    assertThat(error, notNilValue());
-    assertThat(error.domain, equalTo(NSFileManagerLightUntarErrorDomain));
-    assertThatLong(error.code, equalToLong(NSFileNoSuchFileError));
+    XCTAssertNotNil(error);
+    XCTAssertEqualObjects(error.domain, NSFileManagerLightUntarErrorDomain);
+    XCTAssertEqual(error.code, NSFileNoSuchFileError);
 }
 
 - (void)testCorruptedFile {
@@ -148,9 +143,9 @@
 
     //THEN
     XCTAssertFalse(isExtracted, @"Error");
-    assertThat(error, notNilValue());
-    assertThat(error.domain, equalTo(NSFileManagerLightUntarErrorDomain));
-    assertThatLong(error.code, equalToLong(NSFileReadCorruptFileError));
+    XCTAssertNotNil(error);
+    XCTAssertEqualObjects(error.domain, NSFileManagerLightUntarErrorDomain);
+    XCTAssertEqual(error.code, NSFileReadCorruptFileError);
 }
 
 @end
